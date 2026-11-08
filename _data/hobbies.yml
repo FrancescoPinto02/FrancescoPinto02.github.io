@@ -1,0 +1,29 @@
+# Hobby. icon: classe Font Awesome 6 (https://fontawesome.com/search?o=r&m=free)
+
+- name: "Video Games"
+  icon: fa-solid fa-gamepad
+  description: "RPGs, MMOs and anything with a skill tree. Skyrim is my all-time favorite: I used to be a researcher like you, then I took an arrow in the knee."
+
+- name: "Comics"
+  icon: fa-solid fa-book-open
+  description: "Marvel fan through and through, with a soft spot for the X-Men. Still waiting for my mutant power to manifest (debugging at 3 a.m. probably counts)."
+
+- name: "Movies & TV Series"
+  icon: fa-solid fa-film
+  description: "Fantasy all the way: The Lord of the Rings and Harry Potter are on permanent rewatch. One does not simply watch the extended editions just once."
+
+- name: "Pizza"
+  icon: fa-solid fa-pizza-slice
+  description: "I make my own dough and bake pizza in every shape: round, in a pan and many other ways. Hydration levels are tracked more carefully than my experiments."
+
+- name: "LEGO"
+  icon: fa-solid fa-cubes
+  description: "Building things one colorful brick at a time. My proudest build is a huge Hogwarts Castle, which also works as a great excuse not to dust the shelf."
+
+- name: "Travel"
+  icon: fa-solid fa-plane
+  description: "Exploring new places, new food and new cultures. Conferences are just side quests on the way to the next city."
+
+- name: "Swimming"
+  icon: fa-solid fa-person-swimming
+  description: "Competitive swimmer, both in the pool and in open water. Lap after lap, it's where I do my best thinking (and my best breathing exercises)."

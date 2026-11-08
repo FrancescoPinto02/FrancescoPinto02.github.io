@@ -1,0 +1,11 @@
+{% assign c = site.data.currently %}
+{% if c.show and c.items.size > 0 %}
+<section class="currently">
+  <h2 class="currently-title"><span class="pulse"></span> Currently</h2>
+  <ul>
+    {% for item in c.items %}
+    <li><i class="{{ item.icon }}"></i><span>{{ item.text }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

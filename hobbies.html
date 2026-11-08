@@ -1,0 +1,17 @@
+---
+layout: default
+title: Hobbies
+permalink: /hobbies/
+---
+<!-- Contenuto in _data/hobbies.yml -->
+<p class="lead">When I'm not staring at code, you'll probably find me doing one of these. Achievement unlocked: you found the fun page!</p>
+
+<div class="grid hobbies">
+  {% for h in site.data.hobbies %}
+  <article class="card hobby">
+    <div class="hobby-icon"><i class="{{ h.icon }}"></i></div>
+    <h3>{{ h.name }}</h3>
+    <p>{{ h.description }}</p>
+  </article>
+  {% endfor %}
+</div>

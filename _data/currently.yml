@@ -1,0 +1,12 @@
+# Box "Currently" nella pagina About.
+# Per nasconderlo del tutto, imposta show: false.
+# Ogni voce: icon (Font Awesome 6) + text (può contenere HTML, es. <a href="...">link</a>)
+
+show: true
+items:
+  - icon: fa-solid fa-lightbulb
+    text: "Brainstorming new experiments to run (the whiteboard is losing the battle)."
+  - icon: fa-solid fa-diagram-project
+    text: "Working on code smell detection using Neurosymbolic AI."
+  - icon: fa-solid fa-hourglass-half
+    text: "Counting down the days to Avengers: Doomsday."

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Education · Francesco Alessandro Pinto</title>
+  <meta name="description" content="Personal academic website — Software Engineering research">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Tema: applicato prima del render per evitare il "flash" chiaro.
+       Usa la scelta salvata, altrimenti quella del sistema operativo. -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "dark" && t !== "light") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="/assets/img/profile.svg">
+</head>
+<body>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false">
+    <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+  <div class="profile">
+    <img class="avatar" src="/assets/img/profile.svg" alt="Francesco Alessandro Pinto">
+    <h2 class="name"><a href="/">Francesco Alessandro Pinto</a></h2>
+    <p class="role">Researcher - Software Engineering</p>
+
+    <ul class="social">
+      
+      <li>
+        <a href="https://orcid.org/0000-0000-0000-0000" title="ORCID" aria-label="ORCID"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-orcid"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://github.com/FrancescoPinto02" title="GitHub" aria-label="GitHub"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://scholar.google.com/" title="Google Scholar" aria-label="Google Scholar"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-google-scholar"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.linkedin.com/in/fra-pinto02/" title="LinkedIn" aria-label="LinkedIn"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="mailto:fra.pinto2002@gmail.com" title="Email" aria-label="Email"
+           >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </li>
+      
+    </ul>
+
+    
+    <a class="cv-btn" href="/assets/files/cv.pdf" download="CV-francesco-alessandro-pinto.pdf">
+      <i class="fa-solid fa-file-arrow-down"></i> Download CV
+    </a>
+    
+  </div>
+
+  <nav class="nav">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/" >
+          <i class="fa-regular fa-user"></i><span>About</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/education/" class="active" aria-current="page">
+          <i class="fa-solid fa-graduation-cap"></i><span>Education</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/papers/" >
+          <i class="fa-solid fa-book-open"></i><span>Papers</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/projects/" >
+          <i class="fa-solid fa-code"></i><span>Projects</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/hobbies/" >
+          <i class="fa-solid fa-guitar"></i><span>Hobbies</span>
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+</aside>
+
+
+  <main class="main">
+    <section class="section">
+      
+      <header class="section-header">
+        <h1>Education</h1>
+      </header>
+      
+      <!-- Contenuto in _data/education.yml -->
+<ol class="timeline">
+  
+  <li class="timeline-item">
+    <div class="timeline-date">September 2024 – September 2026</div>
+    <div class="card">
+      <h3>M.Sc. in Computer Science (LM-18)</h3>
+      <p class="muted"><i class="fa-solid fa-building-columns"></i> University of Salerno · Fisciano (SA), Italy</p>
+      <p>Master's degree focused on engineering AI-enabled systems, software quality and project management. My thesis investigated how readability-related metrics of developers' prompts are associated with multiple quality dimensions of LLM-generated code.</p>
+      
+      <ul class="details">
+        <li>Curriculum: Software Engineering & IT Management</li><li>Final grade: 110/110 cum laude with special mention</li><li>Thesis: "From Prompt Quality to Code Quality: an Empirical Study on Developer-LLM Conversations"</li><li>Advisor: Prof. Fabio Palomba</li><li>Co-advisor: Dott. Antonio Della Porta</li><li>Excellence Program 2025/2026: worked on an LLM-based Clinical Decision Support System</li>
+      </ul>
+      
+      
+    </div>
+  </li>
+  
+  <li class="timeline-item">
+    <div class="timeline-date">September 2021 – September 2024</div>
+    <div class="card">
+      <h3>B.Sc. in Computer Science (L-31)</h3>
+      <p class="muted"><i class="fa-solid fa-building-columns"></i> University of Salerno · Fisciano (SA), Italy</p>
+      <p>Bachelor's degree where the Fundamentals of Artificial Intelligence course sparked my interest in SE4AI and AI4SE. My thesis presented CAMILLE, an open-source Rasa chatbot integrated into a Visual Studio Code extension that explains ML-specific code smells, analyzes repositories and suggests refactorings through GPT-4o mini.</p>
+      
+      <ul class="details">
+        <li>Final grade: 110/110 cum laude</li><li>Thesis: "CAMILLE: a Chatbot for the Identification and Removal of ML-Specific Code Smells"</li><li>Advisor: Prof. Fabio Palomba</li><li>Co-advisors: Dott. Gilberto Recupito, Dott. Giammaria Giordano</li>
+      </ul>
+      
+      
+      <div class="actions">
+        <a class="btn" href="/assets/files/thesis-bsc.pdf" target="_blank" rel="noopener">
+          <i class="fa-regular fa-file-pdf"></i> Thesis (PDF)
+        </a>
+      </div>
+      
+    </div>
+  </li>
+  
+</ol>
+
+    </section>
+
+    <footer class="footer">
+      © 2026 Francesco Alessandro Pinto · Built with Jekyll &amp; GitHub Pages
+    </footer>
+  </main>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

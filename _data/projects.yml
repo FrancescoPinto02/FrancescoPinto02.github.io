@@ -1,0 +1,25 @@
+# Progetti. Campi: name, description, tags (lista), repo, demo (opzionali), image (opzionale)
+
+- name: "CAMILLE"
+  description: "Conversational Agent for MachIne Learning smeLls Elimination: a Rasa chatbot that explains ML-specific code smells, analyzes GitHub repositories to detect them and generates personalized refactoring suggestions with an LLM. Available as a Visual Studio Code extension."
+  tags: [Python, Rasa, LLM, MongoDB, Code Smells]
+  repo: "https://github.com/FrancescoPinto02/CAMILLE"
+  demo: ""
+
+- name: "SafePet"
+  description: "A web platform that centralizes pets' health records, connecting owners and veterinarians. It includes digital medical records, secure patient linking, a real-time map of nearby vet clinics and an AI module for preliminary dermatological analysis."
+  tags: [Java, Spring Boot, React, MySQL, Docker]
+  repo: "https://github.com/Progetto-SafePet"
+  demo: ""
+
+- name: "RolePlayers AI"
+  description: "A web platform for AI-powered role-playing: users create characters, environments and contexts, then chat with characters that stay true to their descriptions. Sessions are saved automatically and creations can be shared in a public library."
+  tags: [Node.js, JavaScript, MySQL, OpenAI API, Jest]
+  repo: "https://github.com/FrancescoPinto02/RolePlayersAI"
+  demo: ""
+
+- name: "Pokédex Social 2.0"
+  description: "A for-fun project for Pokémon fans: explore and filter the Pokédex, build and manage your own teams, and get optimized team recommendations from a Genetic Algorithm."
+  tags: [Java, Spring Boot, React, PostgreSQL, Genetic Algorithms]
+  repo: "https://github.com/FrancescoPinto02/Pokedex-Social-2.0"
+  demo: ""

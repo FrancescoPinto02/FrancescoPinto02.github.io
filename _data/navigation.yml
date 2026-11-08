@@ -1,0 +1,21 @@
+# Voci del menu laterale (in ordine).
+# url deve coincidere con il "permalink" della pagina corrispondente.
+- title: About
+  url: /
+  icon: fa-regular fa-user
+
+- title: Education
+  url: /education/
+  icon: fa-solid fa-graduation-cap
+
+- title: Papers
+  url: /papers/
+  icon: fa-solid fa-book-open
+
+- title: Projects
+  url: /projects/
+  icon: fa-solid fa-code
+
+- title: Hobbies
+  url: /hobbies/
+  icon: fa-solid fa-guitar

@@ -1,0 +1,22 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+<!-- Contenuto in _data/projects.yml -->
+<div class="grid">
+  {% for p in site.data.projects %}
+  <article class="card project">
+    {% if p.image %}<img class="project-img" src="{{ p.image | relative_url }}" alt="{{ p.name }}">{% endif %}
+    <h3>{{ p.name }}</h3>
+    <p>{{ p.description }}</p>
+    {% if p.tags %}
+    <ul class="tags small">{% for t in p.tags %}<li>{{ t }}</li>{% endfor %}</ul>
+    {% endif %}
+    <div class="actions">
+      {% if p.repo and p.repo != "" %}<a class="btn" href="{{ p.repo }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>{% endif %}
+      {% if p.demo and p.demo != "" %}<a class="btn btn-outline" href="{{ p.demo }}" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>

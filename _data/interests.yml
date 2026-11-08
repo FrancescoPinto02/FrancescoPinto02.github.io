@@ -1,0 +1,26 @@
+# Interessi di ricerca (card nella pagina About).
+# icon: classe Font Awesome 6 → https://fontawesome.com/search?o=r&m=free
+
+- name: "Software Engineering for AI"
+  icon: fa-solid fa-brain
+  description: "How ML-enabled systems are designed, built and maintained, and which quality issues make them different from traditional software."
+
+- name: "AI for Software Engineering"
+  icon: fa-solid fa-robot
+  description: "Using AI and LLMs to support developers, from conversational assistants to automated refactoring suggestions."
+
+- name: "Code Quality & Code Smells"
+  icon: fa-solid fa-broom
+  description: "Detecting and removing code smells, with a focus on ML-specific ones, to keep software maintainable over time."
+
+- name: "Developer-LLM Interaction"
+  icon: fa-solid fa-comments
+  description: "How developers prompt LLMs, and how prompt quality and readability affect the quality of the generated code."
+
+- name: "Neurosymbolic AI"
+  icon: fa-solid fa-diagram-project
+  description: "Combining neural models with symbolic reasoning to build more reliable and explainable software analysis tools."
+
+- name: "Empirical Software Engineering"
+  icon: fa-solid fa-chart-column
+  description: "Data-driven studies of real software and developers, backed by sound statistical analysis."

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Francesco Alessandro Pinto</title>
+  <meta name="description" content="Personal academic website — Software Engineering research">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Tema: applicato prima del render per evitare il "flash" chiaro.
+       Usa la scelta salvata, altrimenti quella del sistema operativo. -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "dark" && t !== "light") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="/assets/img/profile.svg">
+</head>
+<body>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false">
+    <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+  <div class="profile">
+    <img class="avatar" src="/assets/img/profile.svg" alt="Francesco Alessandro Pinto">
+    <h2 class="name"><a href="/">Francesco Alessandro Pinto</a></h2>
+    <p class="role">Researcher - Software Engineering</p>
+
+    <ul class="social">
+      
+      <li>
+        <a href="https://orcid.org/0000-0000-0000-0000" title="ORCID" aria-label="ORCID"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-orcid"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://github.com/FrancescoPinto02" title="GitHub" aria-label="GitHub"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://scholar.google.com/" title="Google Scholar" aria-label="Google Scholar"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-google-scholar"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.linkedin.com/in/fra-pinto02/" title="LinkedIn" aria-label="LinkedIn"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="mailto:fra.pinto2002@gmail.com" title="Email" aria-label="Email"
+           >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </li>
+      
+    </ul>
+
+    
+    <a class="cv-btn" href="/assets/files/cv.pdf" download="CV-francesco-alessandro-pinto.pdf">
+      <i class="fa-solid fa-file-arrow-down"></i> Download CV
+    </a>
+    
+  </div>
+
+  <nav class="nav">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/" >
+          <i class="fa-regular fa-user"></i><span>About</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/education/" >
+          <i class="fa-solid fa-graduation-cap"></i><span>Education</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/papers/" >
+          <i class="fa-solid fa-book-open"></i><span>Papers</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/projects/" class="active" aria-current="page">
+          <i class="fa-solid fa-code"></i><span>Projects</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/hobbies/" >
+          <i class="fa-solid fa-guitar"></i><span>Hobbies</span>
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+</aside>
+
+
+  <main class="main">
+    <section class="section">
+      
+      <header class="section-header">
+        <h1>Projects</h1>
+      </header>
+      
+      <!-- Contenuto in _data/projects.yml -->
+<div class="grid">
+  
+  <article class="card project">
+    
+    <h3>CAMILLE</h3>
+    <p>Conversational Agent for MachIne Learning smeLls Elimination: a Rasa chatbot that explains ML-specific code smells, analyzes GitHub repositories to detect them and generates personalized refactoring suggestions with an LLM. Available as a Visual Studio Code extension.</p>
+    
+    <ul class="tags small"><li>Python</li><li>Rasa</li><li>LLM</li><li>MongoDB</li><li>Code Smells</li></ul>
+    
+    <div class="actions">
+      <a class="btn" href="https://github.com/FrancescoPinto02/CAMILLE" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+      
+    </div>
+  </article>
+  
+  <article class="card project">
+    
+    <h3>SafePet</h3>
+    <p>A web platform that centralizes pets' health records, connecting owners and veterinarians. It includes digital medical records, secure patient linking, a real-time map of nearby vet clinics and an AI module for preliminary dermatological analysis.</p>
+    
+    <ul class="tags small"><li>Java</li><li>Spring Boot</li><li>React</li><li>MySQL</li><li>Docker</li></ul>
+    
+    <div class="actions">
+      <a class="btn" href="https://github.com/Progetto-SafePet" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+      
+    </div>
+  </article>
+  
+  <article class="card project">
+    
+    <h3>RolePlayers AI</h3>
+    <p>A web platform for AI-powered role-playing: users create characters, environments and contexts, then chat with characters that stay true to their descriptions. Sessions are saved automatically and creations can be shared in a public library.</p>
+    
+    <ul class="tags small"><li>Node.js</li><li>JavaScript</li><li>MySQL</li><li>OpenAI API</li><li>Jest</li></ul>
+    
+    <div class="actions">
+      <a class="btn" href="https://github.com/FrancescoPinto02/RolePlayersAI" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+      
+    </div>
+  </article>
+  
+  <article class="card project">
+    
+    <h3>Pokédex Social 2.0</h3>
+    <p>A for-fun project for Pokémon fans: explore and filter the Pokédex, build and manage your own teams, and get optimized team recommendations from a Genetic Algorithm.</p>
+    
+    <ul class="tags small"><li>Java</li><li>Spring Boot</li><li>React</li><li>PostgreSQL</li><li>Genetic Algorithms</li></ul>
+    
+    <div class="actions">
+      <a class="btn" href="https://github.com/FrancescoPinto02/Pokedex-Social-2.0" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+      
+    </div>
+  </article>
+  
+</div>
+
+    </section>
+
+    <footer class="footer">
+      © 2026 Francesco Alessandro Pinto · Built with Jekyll &amp; GitHub Pages
+    </footer>
+  </main>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

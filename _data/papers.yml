@@ -1,0 +1,20 @@
+# Pubblicazioni — l'ordine qui è l'ordine sul sito (metti le più recenti in alto).
+# Finché la lista è vuota, la pagina Papers mostra un messaggio "work in progress".
+#
+# type:  conference | journal | workshop | review   (usato dai filtri)
+# badge: etichetta breve (es. C5, J1, W2, UR)
+# pdf:   link al PDF (può essere un file in /assets/papers/ oppure un URL esterno)
+# Campi opzionali: doi, code, note
+#
+# Esempio (togli i # e sostituisci "[]" qui sotto):
+# - title: "Titolo del paper"
+#   authors: "Francesco Alessandro Pinto, Altro Autore"
+#   venue: "ICSE 2027"
+#   venue_full: "International Conference on Software Engineering"
+#   year: 2027
+#   type: conference
+#   badge: "C1"
+#   pdf: "#"
+#   doi: "https://doi.org/..."
+
+[]

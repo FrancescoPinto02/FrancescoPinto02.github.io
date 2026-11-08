@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Papers · Francesco Alessandro Pinto</title>
+  <meta name="description" content="Personal academic website — Software Engineering research">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Tema: applicato prima del render per evitare il "flash" chiaro.
+       Usa la scelta salvata, altrimenti quella del sistema operativo. -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "dark" && t !== "light") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="/assets/img/profile.svg">
+</head>
+<body>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false">
+    <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+  <div class="profile">
+    <img class="avatar" src="/assets/img/profile.svg" alt="Francesco Alessandro Pinto">
+    <h2 class="name"><a href="/">Francesco Alessandro Pinto</a></h2>
+    <p class="role">Researcher - Software Engineering</p>
+
+    <ul class="social">
+      
+      <li>
+        <a href="https://orcid.org/0000-0000-0000-0000" title="ORCID" aria-label="ORCID"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-orcid"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://github.com/FrancescoPinto02" title="GitHub" aria-label="GitHub"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://scholar.google.com/" title="Google Scholar" aria-label="Google Scholar"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-google-scholar"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.linkedin.com/in/fra-pinto02/" title="LinkedIn" aria-label="LinkedIn"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="mailto:fra.pinto2002@gmail.com" title="Email" aria-label="Email"
+           >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </li>
+      
+    </ul>
+
+    
+    <a class="cv-btn" href="/assets/files/cv.pdf" download="CV-francesco-alessandro-pinto.pdf">
+      <i class="fa-solid fa-file-arrow-down"></i> Download CV
+    </a>
+    
+  </div>
+
+  <nav class="nav">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/" >
+          <i class="fa-regular fa-user"></i><span>About</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/education/" >
+          <i class="fa-solid fa-graduation-cap"></i><span>Education</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/papers/" class="active" aria-current="page">
+          <i class="fa-solid fa-book-open"></i><span>Papers</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/projects/" >
+          <i class="fa-solid fa-code"></i><span>Projects</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/hobbies/" >
+          <i class="fa-solid fa-guitar"></i><span>Hobbies</span>
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+</aside>
+
+
+  <main class="main">
+    <section class="section">
+      
+      <header class="section-header">
+        <h1>Papers</h1>
+      </header>
+      
+      <!-- Contenuto in _data/papers.yml -->
+
+<div class="card empty-state">
+  <div class="empty-icon"><i class="fa-solid fa-flask"></i></div>
+  <h3>Nothing to see here… yet!</h3>
+  <p>My first paper is still in the oven: the dough is rising, the reviewers are preheating.</p>
+  <p class="muted small">Check back soon, it'll be worth the wait (hopefully more than a Reviewer 2 comment).</p>
+</div>
+
+
+    </section>
+
+    <footer class="footer">
+      © 2026 Francesco Alessandro Pinto · Built with Jekyll &amp; GitHub Pages
+    </footer>
+  </main>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Francesco Alessandro Pinto</title>
+  <meta name="description" content="Personal academic website — Software Engineering research">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Tema: applicato prima del render per evitare il "flash" chiaro.
+       Usa la scelta salvata, altrimenti quella del sistema operativo. -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "dark" && t !== "light") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="/assets/img/profile.svg">
+</head>
+<body>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false">
+    <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+  <div class="profile">
+    <img class="avatar" src="/assets/img/profile.svg" alt="Francesco Alessandro Pinto">
+    <h2 class="name"><a href="/">Francesco Alessandro Pinto</a></h2>
+    <p class="role">Researcher - Software Engineering</p>
+
+    <ul class="social">
+      
+      <li>
+        <a href="https://orcid.org/0000-0000-0000-0000" title="ORCID" aria-label="ORCID"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-orcid"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://github.com/FrancescoPinto02" title="GitHub" aria-label="GitHub"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://scholar.google.com/" title="Google Scholar" aria-label="Google Scholar"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-google-scholar"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.linkedin.com/in/fra-pinto02/" title="LinkedIn" aria-label="LinkedIn"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="mailto:fra.pinto2002@gmail.com" title="Email" aria-label="Email"
+           >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </li>
+      
+    </ul>
+
+    
+    <a class="cv-btn" href="/assets/files/cv.pdf" download="CV-francesco-alessandro-pinto.pdf">
+      <i class="fa-solid fa-file-arrow-down"></i> Download CV
+    </a>
+    
+  </div>
+
+  <nav class="nav">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/" class="active" aria-current="page">
+          <i class="fa-regular fa-user"></i><span>About</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/education/" >
+          <i class="fa-solid fa-graduation-cap"></i><span>Education</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/papers/" >
+          <i class="fa-solid fa-book-open"></i><span>Papers</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/projects/" >
+          <i class="fa-solid fa-code"></i><span>Projects</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/hobbies/" >
+          <i class="fa-solid fa-guitar"></i><span>Hobbies</span>
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+</aside>
+
+
+  <main class="main">
+    <section class="section">
+      
+      <header class="section-header">
+        <h1>About</h1>
+      </header>
+      
+      <!-- =========================================================
+     BIO — scrivi qui in Markdown (**grassetto**, *corsivo*, [link](url)).
+     Interessi, "Currently" e News si modificano in _data/:
+       interests.yml · currently.yml · news.yml
+     ========================================================= -->
+<div class="bio">
+
+  <p>Hi! I’m <strong>Francesco Alessandro Pinto</strong>, a researcher in Software Engineering at the <a href="https://sesalabunisa.github.io/en/index.html">SeSa Lab</a> of the <a href="https://www.unisa.it">University of Salerno</a>, where I also earned both my B.Sc. and M.Sc. in Computer Science.</p>
+
+  <p>My work sits where <strong>Software Engineering for AI (SE4AI)</strong> meets <strong>AI for Software Engineering (AI4SE)</strong>: how to build better ML-enabled systems, and how AI, especially Large Language Models, can help developers write better code. My bachelor’s thesis introduced <em>CAMILLE</em>, a chatbot that helps ML engineers detect and refactor ML-specific code smells; my master’s thesis studied how the readability of developers’ prompts relates to the quality of the code LLMs generate.</p>
+
+  <p>When I’m not staring at code, I’m probably swimming laps, kneading pizza dough, adding bricks to a LEGO castle or starting yet another Skyrim playthrough.</p>
+
+</div>
+
+<section class="currently">
+  <h2 class="currently-title"><span class="pulse"></span> Currently</h2>
+  <ul>
+    
+    <li><i class="fa-solid fa-lightbulb"></i><span>Brainstorming new experiments to run (the whiteboard is losing the battle).</span></li>
+    
+    <li><i class="fa-solid fa-diagram-project"></i><span>Working on code smell detection using Neurosymbolic AI.</span></li>
+    
+    <li><i class="fa-solid fa-hourglass-half"></i><span>Counting down the days to Avengers: Doomsday.</span></li>
+    
+  </ul>
+</section>
+
+<h2 class="block-title"><i class="fa-solid fa-microscope"></i> Research Interests</h2>
+<div class="interests">
+  
+  <article class="interest">
+    <div class="interest-icon"><i class="fa-solid fa-brain"></i></div>
+    <div>
+      <h3>Software Engineering for AI</h3>
+      <p>How ML-enabled systems are designed, built and maintained, and which quality issues make them different from traditional software.</p>
+    </div>
+  </article>
+  
+  <article class="interest">
+    <div class="interest-icon"><i class="fa-solid fa-robot"></i></div>
+    <div>
+      <h3>AI for Software Engineering</h3>
+      <p>Using AI and LLMs to support developers, from conversational assistants to automated refactoring suggestions.</p>
+    </div>
+  </article>
+  
+  <article class="interest">
+    <div class="interest-icon"><i class="fa-solid fa-broom"></i></div>
+    <div>
+      <h3>Code Quality &amp; Code Smells</h3>
+      <p>Detecting and removing code smells, with a focus on ML-specific ones, to keep software maintainable over time.</p>
+    </div>
+  </article>
+  
+  <article class="interest">
+    <div class="interest-icon"><i class="fa-solid fa-comments"></i></div>
+    <div>
+      <h3>Developer-LLM Interaction</h3>
+      <p>How developers prompt LLMs, and how prompt quality and readability affect the quality of the generated code.</p>
+    </div>
+  </article>
+  
+  <article class="interest">
+    <div class="interest-icon"><i class="fa-solid fa-diagram-project"></i></div>
+    <div>
+      <h3>Neurosymbolic AI</h3>
+      <p>Combining neural models with symbolic reasoning to build more reliable and explainable software analysis tools.</p>
+    </div>
+  </article>
+  
+  <article class="interest">
+    <div class="interest-icon"><i class="fa-solid fa-chart-column"></i></div>
+    <div>
+      <h3>Empirical Software Engineering</h3>
+      <p>Data-driven studies of real software and developers, backed by sound statistical analysis.</p>
+    </div>
+  </article>
+  
+</div>
+
+<h2 class="block-title"><i class="fa-regular fa-newspaper"></i> News</h2>
+<ul class="news" id="news-list">
+  
+  <li>
+    <span class="date">Nov 2026</span>
+    <span class="news-text">Started my research position at the <a href="https://sesalabunisa.github.io/en/index.html">SeSa Lab</a>, University of Salerno.</span>
+  </li>
+  
+  <li>
+    <span class="date">Sep 2026</span>
+    <span class="news-text">Graduated with an M.Sc. in Computer Science, <strong>110/110 cum laude with special mention</strong>.</span>
+  </li>
+  
+  <li>
+    <span class="date">Sep 2024</span>
+    <span class="news-text">Graduated with a B.Sc. in Computer Science, <strong>110/110 cum laude</strong>.</span>
+  </li>
+  
+</ul>
+
+
+    </section>
+
+    <footer class="footer">
+      © 2026 Francesco Alessandro Pinto · Built with Jekyll &amp; GitHub Pages
+    </footer>
+  </main>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

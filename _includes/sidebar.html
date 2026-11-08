@@ -1,0 +1,38 @@
+<aside class="sidebar" id="sidebar">
+  <div class="profile">
+    <img class="avatar" src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}">
+    <h2 class="name"><a href="{{ '/' | relative_url }}">{{ site.author.name }}</a></h2>
+    {% if site.author.role %}<p class="role">{{ site.author.role }}</p>{% endif %}
+
+    <ul class="social">
+      {% for s in site.social %}
+      <li>
+        <a href="{{ s.url }}" title="{{ s.name }}" aria-label="{{ s.name }}"
+           {% unless s.url contains 'mailto:' %}target="_blank" rel="noopener"{% endunless %}>
+          <i class="{{ s.icon }}"></i>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% if site.author.cv %}
+    <a class="cv-btn" href="{{ site.author.cv | relative_url }}" download="CV-{{ site.author.name | slugify }}.pdf">
+      <i class="fa-solid fa-file-arrow-down"></i> Download CV
+    </a>
+    {% endif %}
+  </div>
+
+  <nav class="nav">
+    <ul>
+      {% for item in site.data.navigation %}
+      {% assign active = false %}
+      {% if page.url == item.url %}{% assign active = true %}{% endif %}
+      <li>
+        <a href="{{ item.url | relative_url }}" {% if active %}class="active" aria-current="page"{% endif %}>
+          <i class="{{ item.icon }}"></i><span>{{ item.title }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</aside>

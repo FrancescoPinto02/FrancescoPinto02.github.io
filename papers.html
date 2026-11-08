@@ -1,0 +1,43 @@
+---
+layout: default
+title: Papers
+permalink: /papers/
+---
+<!-- Contenuto in _data/papers.yml -->
+{% if site.data.papers.size == 0 %}
+<div class="card empty-state">
+  <div class="empty-icon"><i class="fa-solid fa-flask"></i></div>
+  <h3>Nothing to see here… yet!</h3>
+  <p>My first paper is still in the oven: the dough is rising, the reviewers are preheating.</p>
+  <p class="muted small">Check back soon, it'll be worth the wait (hopefully more than a Reviewer 2 comment).</p>
+</div>
+{% else %}
+<div class="filters" role="tablist">
+  <button class="filter active" data-filter="all">All</button>
+  <button class="filter" data-filter="conference">Conference</button>
+  <button class="filter" data-filter="journal">Journal</button>
+  <button class="filter" data-filter="workshop">Workshop</button>
+  <button class="filter" data-filter="review">Under Review</button>
+</div>
+
+<div class="grid papers">
+  {% for p in site.data.papers %}
+  <article class="card paper" data-type="{{ p.type }}">
+    <span class="paper-type type-{{ p.type }}">{{ p.type | replace: 'review', 'under review' }}</span>
+    <h3>{{ p.title }}</h3>
+    <p class="authors">{{ p.authors }}</p>
+    <p class="venue">
+      <strong>{{ p.venue }}</strong>
+      {% if p.badge %}<span class="badge">{{ p.badge }}</span>{% endif %}
+    </p>
+    {% if p.venue_full %}<p class="muted small">{{ p.venue_full }}</p>{% endif %}
+
+    <div class="actions">
+      {% if p.pdf and p.pdf != "" %}<a class="btn" href="{{ p.pdf }}" target="_blank" rel="noopener"><i class="fa-regular fa-file-pdf"></i> PDF</a>{% endif %}
+      {% if p.doi %}<a class="btn btn-outline" href="{{ p.doi }}" target="_blank" rel="noopener"><i class="fa-solid fa-link"></i> DOI</a>{% endif %}
+      {% if p.code %}<a class="btn btn-outline" href="{{ p.code }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% endif %}

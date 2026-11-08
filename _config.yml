@@ -1,0 +1,49 @@
+# =============================================================
+#  CONFIGURAZIONE PRINCIPALE DEL SITO
+#  Modifica qui nome, ruolo, foto e link social.
+#  Dopo ogni modifica a questo file, in locale riavvia `jekyll serve`.
+# =============================================================
+
+title: "Francesco Alessandro Pinto"
+description: "Personal academic website — Software Engineering research"
+lang: en
+
+# Se il repository si chiama <username>.github.io lascia baseurl vuoto.
+# Se invece è un repo qualsiasi (es. "my-site"), metti baseurl: "/my-site"
+url: "https://FrancescoPinto02.github.io"
+baseurl: ""
+
+# ---------- Profilo (barra laterale) ----------
+author:
+  name: "Francesco Alessandro Pinto"
+  role: "Researcher - Software Engineering"
+  affiliation: "University of Salerno"
+  avatar: "/assets/img/profile.svg"   # sostituisci con /assets/img/profile.jpg
+  cv: "/assets/files/cv.pdf"          # sostituisci il file con il tuo CV; cancella la riga per nascondere il pulsante
+
+# ---------- Icone social (in ordine di visualizzazione) ----------
+# icon: classi Font Awesome 6 → https://fontawesome.com/search?o=r&m=free
+# Per aggiungere un link copia un blocco; per toglierlo cancellalo.
+social:
+  - name: ORCID
+    icon: fa-brands fa-orcid
+    url: https://orcid.org/0000-0000-0000-0000
+  - name: GitHub
+    icon: fa-brands fa-github
+    url: https://github.com/FrancescoPinto02
+  - name: Google Scholar
+    icon: fa-brands fa-google-scholar
+    url: https://scholar.google.com/
+  - name: LinkedIn
+    icon: fa-brands fa-linkedin-in
+    url: https://www.linkedin.com/in/fra-pinto02/
+
+# ---------- Impostazioni Jekyll (di norma non serve toccarle) ----------
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .gitignore

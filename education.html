@@ -1,0 +1,30 @@
+---
+layout: default
+title: Education
+permalink: /education/
+---
+<!-- Contenuto in _data/education.yml -->
+<ol class="timeline">
+  {% for e in site.data.education %}
+  <li class="timeline-item">
+    <div class="timeline-date">{{ e.start }} – {{ e.end }}</div>
+    <div class="card">
+      <h3>{{ e.degree }}</h3>
+      <p class="muted"><i class="fa-solid fa-building-columns"></i> {{ e.institution }}{% if e.location %} · {{ e.location }}{% endif %}</p>
+      {% if e.description %}<p>{{ e.description }}</p>{% endif %}
+      {% if e.details %}
+      <ul class="details">
+        {% for d in e.details %}<li>{{ d }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+      {% if e.thesis_pdf %}
+      <div class="actions">
+        <a class="btn" href="{{ e.thesis_pdf | relative_url }}" target="_blank" rel="noopener">
+          <i class="fa-regular fa-file-pdf"></i> Thesis (PDF)
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>

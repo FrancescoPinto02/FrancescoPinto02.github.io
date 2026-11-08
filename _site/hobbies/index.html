@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hobbies · Francesco Alessandro Pinto</title>
+  <meta name="description" content="Personal academic website — Software Engineering research">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Tema: applicato prima del render per evitare il "flash" chiaro.
+       Usa la scelta salvata, altrimenti quella del sistema operativo. -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t !== "dark" && t !== "light") {
+        t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="/assets/img/profile.svg">
+</head>
+<body>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+  <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false">
+    <i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+  <div class="profile">
+    <img class="avatar" src="/assets/img/profile.svg" alt="Francesco Alessandro Pinto">
+    <h2 class="name"><a href="/">Francesco Alessandro Pinto</a></h2>
+    <p class="role">Researcher - Software Engineering</p>
+
+    <ul class="social">
+      
+      <li>
+        <a href="https://orcid.org/0000-0000-0000-0000" title="ORCID" aria-label="ORCID"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-orcid"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://github.com/FrancescoPinto02" title="GitHub" aria-label="GitHub"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://scholar.google.com/" title="Google Scholar" aria-label="Google Scholar"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-google-scholar"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://www.linkedin.com/in/fra-pinto02/" title="LinkedIn" aria-label="LinkedIn"
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a href="mailto:fra.pinto2002@gmail.com" title="Email" aria-label="Email"
+           >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </li>
+      
+    </ul>
+
+    
+    <a class="cv-btn" href="/assets/files/cv.pdf" download="CV-francesco-alessandro-pinto.pdf">
+      <i class="fa-solid fa-file-arrow-down"></i> Download CV
+    </a>
+    
+  </div>
+
+  <nav class="nav">
+    <ul>
+      
+      
+      
+      <li>
+        <a href="/" >
+          <i class="fa-regular fa-user"></i><span>About</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/education/" >
+          <i class="fa-solid fa-graduation-cap"></i><span>Education</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/papers/" >
+          <i class="fa-solid fa-book-open"></i><span>Papers</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/projects/" >
+          <i class="fa-solid fa-code"></i><span>Projects</span>
+        </a>
+      </li>
+      
+      
+      
+      <li>
+        <a href="/hobbies/" class="active" aria-current="page">
+          <i class="fa-solid fa-guitar"></i><span>Hobbies</span>
+        </a>
+      </li>
+      
+    </ul>
+  </nav>
+</aside>
+
+
+  <main class="main">
+    <section class="section">
+      
+      <header class="section-header">
+        <h1>Hobbies</h1>
+      </header>
+      
+      <!-- Contenuto in _data/hobbies.yml -->
+<p class="lead">When I'm not staring at code, you'll probably find me doing one of these. Achievement unlocked: you found the fun page!</p>
+
+<div class="grid hobbies">
+  
+  <article class="card hobby">
+    <div class="hobby-icon"><i class="fa-solid fa-gamepad"></i></div>
+    <h3>Video Games</h3>
+    <p>RPGs, MMOs and anything with a skill tree. Skyrim is my all-time favorite: I used to be a researcher like you, then I took an arrow in the knee.</p>
+  </article>
+  
+  <article class="card hobby">
+    <div class="hobby-icon"><i class="fa-solid fa-book-open"></i></div>
+    <h3>Comics</h3>
+    <p>Marvel fan through and through, with a soft spot for the X-Men. Still waiting for my mutant power to manifest (debugging at 3 a.m. probably counts).</p>
+  </article>
+  
+  <article class="card hobby">
+    <div class="hobby-icon"><i class="fa-solid fa-film"></i></div>
+    <h3>Movies & TV Series</h3>
+    <p>Fantasy all the way: The Lord of the Rings and Harry Potter are on permanent rewatch. One does not simply watch the extended editions just once.</p>
+  </article>
+  
+  <article class="card hobby">
+    <div class="hobby-icon"><i class="fa-solid fa-pizza-slice"></i></div>
+    <h3>Pizza</h3>
+    <p>I make my own dough and bake pizza in every shape: round, in a pan and many other ways. Hydration levels are tracked more carefully than my experiments.</p>
+  </article>
+  
+  <article class="card hobby">
+    <div class="hobby-icon"><i class="fa-solid fa-cubes"></i></div>
+    <h3>LEGO</h3>
+    <p>Building things one colorful brick at a time. My proudest build is a huge Hogwarts Castle, which also works as a great excuse not to dust the shelf.</p>
+  </article>
+  
+  <article class="card hobby">
+    <div class="hobby-icon"><i class="fa-solid fa-plane"></i></div>
+    <h3>Travel</h3>
+    <p>Exploring new places, new food and new cultures. Conferences are just side quests on the way to the next city.</p>
+  </article>
+  
+  <article class="card hobby">
+    <div class="hobby-icon"><i class="fa-solid fa-person-swimming"></i></div>
+    <h3>Swimming</h3>
+    <p>Competitive swimmer, both in the pool and in open water. Lap after lap, it's where I do my best thinking (and my best breathing exercises).</p>
+  </article>
+  
+</div>
+
+    </section>
+
+    <footer class="footer">
+      © 2026 Francesco Alessandro Pinto · Built with Jekyll &amp; GitHub Pages
+    </footer>
+  </main>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

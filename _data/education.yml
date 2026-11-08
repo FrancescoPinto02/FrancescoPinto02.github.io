@@ -1,0 +1,31 @@
+# Percorso di studi — dal più recente al più vecchio.
+# Campi: degree, institution, location, start, end, description, details (lista, opzionale)
+# thesis_pdf (opzionale): percorso del PDF della tesi → mostra il pulsante "Thesis (PDF)"
+
+- degree: "M.Sc. in Computer Science (LM-18)"
+  institution: "University of Salerno"
+  location: "Fisciano (SA), Italy"
+  start: "September 2024"
+  end: "September 2026"
+  description: "Master's degree focused on engineering AI-enabled systems, software quality and project management. My thesis investigated how readability-related metrics of developers' prompts are associated with multiple quality dimensions of LLM-generated code."
+  details:
+    - "Curriculum: Software Engineering & IT Management"
+    - "Final grade: 110/110 cum laude with special mention"
+    - "Thesis: \"From Prompt Quality to Code Quality: an Empirical Study on Developer-LLM Conversations\""
+    - "Advisor: Prof. Fabio Palomba"
+    - "Co-advisor: Dott. Antonio Della Porta"
+    - "Excellence Program 2025/2026: worked on an LLM-based Clinical Decision Support System"
+
+
+- degree: "B.Sc. in Computer Science (L-31)"
+  institution: "University of Salerno"
+  location: "Fisciano (SA), Italy"
+  start: "September 2021"
+  end: "September 2024"
+  thesis_pdf: "/assets/files/thesis-bsc.pdf"
+  description: "Bachelor's degree where the Fundamentals of Artificial Intelligence course sparked my interest in SE4AI and AI4SE. My thesis presented CAMILLE, an open-source Rasa chatbot integrated into a Visual Studio Code extension that explains ML-specific code smells, analyzes repositories and suggests refactorings through GPT-4o mini."
+  details:
+    - "Final grade: 110/110 cum laude"
+    - "Thesis: \"CAMILLE: a Chatbot for the Identification and Removal of ML-Specific Code Smells\""
+    - "Advisor: Prof. Fabio Palomba"
+    - "Co-advisors: Dott. Gilberto Recupito, Dott. Giammaria Giordano"
